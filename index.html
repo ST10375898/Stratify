@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hey there</h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Stratify</title>
+    </head>
+    <body>
+        <!-- The header bar(with Website name) -->
+         <header class="webName">
+            <h1 id="name">STRATIFY</h1>
+         </header>
+        <!-- The mainContent page(with mini video and buttons) -->
+         <main class="mainContent">
+            <div class="sideBar">
+                <!-- Links on the side bar -->
+                 <nav class="Navigation">
+                    <a id="Home" href="#"><i class="fa-solid fa-house"></i>Home</a><hr>
+                    <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
+                    <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr>
+                 </nav>
+            </div>
+            <div class="Content">
+                <!-- A mini video background -->
+                <video autoplay muted loop>
+                    <source src="3262-167695261.mp4" type="video/mp4">
+                </video>
+                <!-- The buttons -->
+                <div class="Btns">
+                    <button type="submit" id="logIn">Login</button>
+                    <button type="submit" id="signUp">Sign Up</button>
+                </div>
+            </div>
+         </main>
+
+        <!-- Linking the JS script -->
+         <script src="index.js"></script>
+    </body>
 </html>
