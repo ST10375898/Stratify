@@ -20,7 +20,6 @@
   // Initialize Firebase
   const application = initializeApp(firebaseConfig);
 
-
   const db = getFirestore(application);
 
 /*=================== firebasae end ======================*/
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded",function () {
               fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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", // Replace with your actual API key
+          "Authorization": `Bearer ${process.env.DEEP_SEEK_API_KEY}`, // Replace with your actual API key
           "HTTP-Referer": "https://your-site.com", // Optional: replace with your site URL
           "X-Title": "Your Site Name",             // Optional: replace with your site name
           "Content-Type": "application/json"
@@ -83,7 +82,7 @@ document.addEventListener("DOMContentLoaded",function () {
                 strategyDescription:strategy,
                 numCompletedTasks:completed_tasks,
                 numIncompleteTasks:incomplete_tasks,
-                 aiAdvice:aiResponse
+                aiAdvice:aiResponse
                
             });
 
@@ -98,9 +97,6 @@ document.addEventListener("DOMContentLoaded",function () {
             alert("Error submitting data.");
         }
         }, 4 * 60 * 1000); 
-
-         
-
         
     });
 // =======Visualizing the AI responses===========
