@@ -46,7 +46,7 @@ git clone https://github.com/ST10375898/Stratify.git
  # Navigate  into the folder
  cd Stratify
  
- # Opend index.htm in abrowser or use Live Server
+ # Open index.htm in abrowser or use Live Server
 
 
 ## Usage
