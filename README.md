@@ -2,7 +2,7 @@
 A smart and helpful website that uses AI to help businesses to plan and manage their projects effectively.
 
 ## Demo
-[Click here to find the YouTube video] ()
+[Click here to find the YouTube video] (https://youtu.be/TCjd_uXmP5U)
 
 ## Table of content
 * About
