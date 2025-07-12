@@ -11,7 +11,7 @@ A smart and helpful website that uses AI to help businesses to plan and manage t
 * Usage
 
 ## About
-Many businesses struggle with project planning due to poor budgeting,unclear timelines and lack of strategic direction.Our website is designed to solve these problems by using AI to generate smart and effective strategies.The businesseswill fill in the form with the important project details such as:
+Many businesses struggle with project planning due to poor budgeting,unclear timelines and lack of strategic direction.Our website is designed to solve these problems by using AI to generate smart and effective strategies.The businesses will fill in the form with the important project details such as:
 * Project name
 * Budget
 * Start and end date
@@ -28,7 +28,7 @@ To guide businesses in making better project decisions,from the start until the 
 ## Features
 * AI-generated project strategy suggestions
 * Project tracking via form submission
-* user-friendly interface
+* User-friendly interface
 * Firebase database intergration
 
 ## Technologies used
@@ -46,11 +46,11 @@ git clone https://github.com/ST10375898/Stratify.git
  # Navigate  into the folder
  cd Stratify
  
- # Open index.htm in abrowser or use Live Server
+ # Open index.html in a browser or use Live Server
 
 
 ## Usage
-1. Sign up or log in using the company or business details.
+1. Sign-up or log in using the company or business details.
 2. Fill in the project form with accurate details.
 3. Submit the form to receive AI-generated response.
 4. Manage your project using the dashboard.
