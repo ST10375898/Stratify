@@ -55,4 +55,3 @@ git clone https://github.com/ST10375898/Stratify.git
 3. Submit the form to receive AI-generated response.
 4. Manage your project using the dashboard.
 
-There were spelling errors but I fixed them
