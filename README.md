@@ -43,7 +43,7 @@ To guide businesses in making better project decisions,from the start until the 
  # Clone the repository
 git clone https://github.com/ST10375898/Stratify.git
 
- # Navigate  into thte folder
+ # Navigate  into the folder
  cd Stratify
  
  # Opend index.htm in abrowser or use Live Server
