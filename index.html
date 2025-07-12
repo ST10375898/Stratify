@@ -11,33 +11,74 @@
     </head>
     <body>
         <!-- The header bar(with Website name) -->
-         <header class="webName">
-            <h1 id="name">STRATIFY</h1>
-         </header>
+        <header class="webName">
+          <h1 id="name">STRATIFY</h1>
+        </header>
         <!-- The mainContent page(with mini video and buttons) -->
-         <main class="mainContent">
-            <div class="sideBar">
-                <!-- Links on the side bar -->
-                 <nav class="Navigation">
-                    <a id="Home" href="#"><i class="fa-solid fa-house"></i>Home</a><hr>
-                    <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
-                    <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr>
-                 </nav>
+        <main class="mainContent">
+          <div class="sideBar">
+          <!-- Links on the side bar -->
+            <nav class="Navigation">
+              <a id="Home" href="index.html"><i class="fa-solid fa-house"></i>Home</a><hr>
+              <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
+              <!-- <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr> -->
+              <!--  <a id="Contacts" href="analysis.html"><i class="fa-solid fa-phone"></i>Analyse</a><hr>  -->
+            </nav>
+          </div>
+          <div class="Content">
+            <!-- A mini video background -->
+            <video autoplay muted loop>
+              <source src="3262-167695261.mp4" type="video/mp4">
+            </video>
+            <div id="formSection" style="display: none; position: relative; z-index: 2; padding: 20px;">
+              <h2>Project Submission Form</h2>
+              <form id="projectForm">
+                <input type="text" placeholder="Project Name" required><br><br>
+                <input type="text" placeholder="Category" required><br><br>
+                <textarea placeholder="Description" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+              </form>
             </div>
-            <div class="Content">
-                <!-- A mini video background -->
-                <video autoplay muted loop>
-                    <source src="3262-167695261.mp4" type="video/mp4">
-                </video>
-                <!-- The buttons -->
-                <div class="Btns">
-                    <button type="submit" id="logIn">Login</button>
-                    <button type="submit" id="signUp">Sign Up</button>
-                </div>
+            <!-- The buttons -->
+            <div class="Btns">
+              <button type="submit" id="logIn">Login</button>
+              <button type="submit" id="signUp">Sign Up</button>
+              <button type="button" id="logOut" style="display: none;">Logout</button> <!--  NEW BUTTON -->
             </div>
-         </main>
-
+          </div>
+        </main>
+          <!-- AUTH MODAL -->
+          <div id="authModal" class="modal">
+            <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="authForm">
+              <h2>Login</h2>
+              <input type="email" id="loginEmail" placeholder="Email" required><br>
+              <input type="password" id="loginPassword" placeholder="Password" required><br>
+              <a href="#" id="forgetPasswordLink" style="color: blue; font-size: 14px;">Forgot Password?</a><br>
+              <button type="submit">Login</button>
+            </form>
+            <!-- SIGNUP FORM -->
+            <form id="signupForm" class="authForm" style="display: none;">
+              <h2>Sign Up</h2>
+              <input type="text" id="signupUsername" placeholder="Username" required><br>
+              <input type="email" id="signupEmail" placeholder="Email" required><br>
+              <input type="password" id="signupPassword" placeholder="Password" required><br>
+              <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+              <!-- Password checklist -->
+              <ul class="password-checklist">
+                <li id="length">✔ At least 10 characters</li>
+                <li id="uppercase">✔ Uppercase letter</li>
+                <li id="number">✔ A number</li>
+                <li id="special">✔ A special character (!@#$...)</li>
+              </ul>
+              <button type="submit">Create Account</button>
+            </form>
+          </div>
+        </div>
         <!-- Linking the JS script -->
-         <script src="index.js"></script>
+        <script type="module" src="index.js"></script>
     </body>
 </html>
+

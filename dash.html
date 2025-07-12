@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dash.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Stratify</title>
+    </head>
+    <body>
+        <!-- The header bar(with Website name) -->
+         <header class="webName">
+            <h1 id="name">STRATIFY</h1>
+         </header>
+        <!-- The mainContent page(with mini video and buttons) -->
+         <main class="mainContent">
+            <div class="sideBar">
+                <!-- Links on the side bar -->
+                 <nav class="Navigation">
+                    <a id="Home" href="index.html"><i class="fa-solid fa-house"></i>Home</a><hr>
+                    <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
+                    <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr>
+                  <!--  <a id="Contacts" href="analysis.html"><i class="fa-solid fa-phone"></i>Analyse</a><hr>  -->
+                 </nav>
+            </div>
+            <div class="Content">
+                  <div class="top">
+                    <h1 id="dashboard">Dashboard</h1>
+                    <button type="submit" id="logIn" onclick="window.location.href='index.html'">Logout</button>
+                  </div>
+                    <div class="card-container">
+                        <div class="card">Project 1</div>
+                        <div class="card">Project 2</div>
+                        <div class="card">Project 3</div>
+                        <div class="card">Project 4</div>
+                        <div class="card">Project 5</div>
+                        <div class="card">Project 6</div>
+                    </div>
+                    <!-- Button to add and manage projects -->
+                     <div class="prButtons">
+                        <button type="submit" id="logIn">Add Project</button>
+                     </div>
+            </div>
+         </main>
+        <!-- Linking the JS script -->
+     
+         <script type="module" src="index.js"></script>
+    </body>
+</html>
+

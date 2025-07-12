@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dash.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Stratify</title>
+    </head>
+    <body>
+        <!-- The header bar(with Website name) -->
+         <header class="webName">
+            <h1 id="name">STRATIFY</h1>
+         </header>
+        <!-- The mainContent page(with mini video and buttons) -->
+         <main class="mainContent">
+            <div class="sideBar">
+                <!-- Links on the side bar -->
+                 <nav class="Navigation">
+                    <a id="Home" href="index.html"><i class="fa-solid fa-house"></i>Home</a><hr>
+                    <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
+                    <!-- <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr> -->
+                  <!--  <a id="Contacts" href="analysis.html"><i class="fa-solid fa-phone"></i>Analyse</a><hr>  -->
+                 </nav>
+            </div>
+            <div class="Content">
+                  <div class="top">
+                    <h1 id="dashboard">Create new Project</h1>
+                    <button type="submit" id="signOut" onclick="window.location.href='index.html'">Logout</button>
+                  </div>
+                   <div class="pForm">
+                        <form id="projectForm" class="hidden">
+                            <h3>Fill in project details</h3>        
+                            <input type="text" id="projectName" placeholder="Project name..." required />
+                            <input type="number" id="taskCount" placeholder="Number of tasks" required />
+                            <input type="text" id="budget" placeholder="Budget (R)" required />
+
+                            <div class="date-group">
+                              <input type="date" id="startDate" required />
+                              <input type="date" id="endDate" required />
+                            </div>
+                            <textarea id="strategy" placeholder="Strategy description" rows="4" required></textarea>
+                            <!-- <button type="submit" class="submit-btn">Submit</button> -->
+                        </form>
+                   </div>
+                    <!-- Button to add and manage projects -->
+                     <div class="prButtons">
+                        <button type="submit" id="addProject" >Add Project</button>
+                     </div>
+            </div>
+         </main>
+        <!-- Linking the JS script -->
+     
+         <!-- <script type="module" src="index.js"></script> -->
+    <script src="dashboard.js" type="module"></script>
+
+    </body>
+</html>
+

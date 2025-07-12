@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="formStyle.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Stratify</title>
+    </head>
+    <body>
+        <!-- The header bar(with Website name) -->
+         <header class="webName">
+            <h1 id="name">STRATIFY</h1>
+         </header>
+        <!-- The mainContent page(with mini video and buttons) -->
+         <main class="mainContent">
+            <div class="sideBar">
+                <!-- Links on the side bar -->
+                <nav class="Navigation">
+  <a id="Home" href="index.html"><i class="fa-solid fa-house"></i>Home</a><hr>
+  <a id="About" href="#"><i class="fa-solid fa-circle-info"></i>About</a><hr>
+  <a id="Contacts" href="#"><i class="fa-solid fa-phone"></i>Contacts</a><hr>
+  <a id="Analyse" href="analysis.html"><i class="fa-solid fa-chart-line"></i>Analyse</a><hr>
+
+  <!-- Logout styled like the links -->
+  <a id="logoutBtn" href="#" style="display:none; width: 100%; padding: 10px; border-radius: 5px; background-color: #00d4aa; color: white; cursor: pointer; font-size: 16px; margin-top: 10px; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+    <i class="fa-solid fa-right-from-bracket"></i> Logout
+  </a>
+</nav>
+            </div>
+            <div class="main">
+                <h3 class="form-heading">Enter project details</h3>
+                <form id="project_form">
+
+                
+                <div class="form-container">
+                   
+                    <div class="side-a">
+                        <label>
+                            <input class="detail-input" type="text" id="project_name" name="project_name" placeholder="Project name">
+                        </label>
+                        <label>
+                            Start Date
+                            <input class="detail-input" type="date" id="start_date" name="start_date" placeholder="Start Date">
+                        </label>
+                        <label>
+                            <input class="detail-input" type="number" id="num_incomplete_tasks" name="num_incomplete_tasks" placeholder="Number of Completed tasks">
+                        </label>
+                    </div>
+                    <div class="side-b">
+                        <label>
+                        
+                            <input class="detail-input" type="number" id="budget" name="budget" placeholder="Budget">
+                        </label>
+                        <label>
+                            <p>Finish Date</p>
+                            <input class="detail-input" type="date" id="finish_date" name="finish_date" placeholder="Finish Date">
+                        </label>
+                        <label>
+                            <input class="detail-input" type="number" id="num_complete_tasks" name="num_complete_tasks" placeholder="Number of Incomplete tasks">
+                        </label>
+                    </div>
+
+                    
+                    
+                </div>
+                    <div class="text-area">
+                        <label>
+                            <textarea name="strategy" id="strategy" placeholder="Project Strategy Description" cols="30" rows="5" class="detail-text"></textarea>
+                        </label>
+                        
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+         </main>
+
+        <!-- Linking the JS script -->
+         
+    </body>
+    <script src="newScript.js" type="module"></script>
+</html>
